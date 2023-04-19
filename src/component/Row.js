@@ -183,7 +183,7 @@ function Row({
     updatedState.forEach((data) => {
       if (data.id === id) {
         updatedState = updatedState.filter((obj) => {
-          return obj != data;
+          return obj !== data;
         });
       }
       deleteObj(data, id);
